@@ -1,0 +1,26 @@
+html {border: 1px solid #000000}
+
+h1  {color:#ff69b4;
+    font-size: 30px;
+    font-family: Arial;
+    line-height: 30px;
+    border-bottom-style: dotted}
+
+h2 {color:#9c9c9c;
+    font-size: 15px;
+    font-family: Arial;
+    line-height: 30px;
+    }
+
+p1 {color: #000000;
+    font-size: 12px;
+    font-family:arial;
+    line-height:30px}
+
+h3 {font-style: oblique;}
+
+ol {border: 5px solid #7D2181;
+    background-color: #eeeeee;
+padding: 20px
+    }
+a:hover {color:#008000}

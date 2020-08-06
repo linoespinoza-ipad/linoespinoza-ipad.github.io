@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 500px;
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+
+
+h1 {
+    color: hotpink;
+    border-bottom: 10px;
+    border-bottom-style:  dotted;
+    border-bottom-color: purple;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2.grey-subtitle {
+    color: lightgrey;
+    font-size: 20px;
+}
+
+h2.cursivo{
+    font-style: italic;
+}
+
+ul {
+    background-color: #eeeeee;
+    border: 5px;
+    border-style: solid;
+    border-color: purple;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+}
+
+a {
+    color: orange
+}
+a:hover {
+    color: green;
+}
+

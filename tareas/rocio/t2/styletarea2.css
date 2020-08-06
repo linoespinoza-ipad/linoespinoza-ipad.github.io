@@ -1,0 +1,29 @@
+html.bordeado {
+    border: 1px solid grey;
+    margin: 3px;
+    padding: 5px;
+}
+
+h1 {
+    color: hotpink;
+    border-bottom: 10px dotted purple;
+}
+
+h2 {
+    color: gray;
+}
+
+#titulo-3 {
+    font-style: italic;
+    color: black;
+}
+
+ul.bordeado{
+    border: 5px solid purple; 
+    background: #eeeeee; 
+    padding: 25px 30px;
+}
+
+a:hover {
+    color: green;
+}

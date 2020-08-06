@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grid con CSS</title>
+    <style>
+       body {
+          width: 90%;
+          max-width: 900px;
+          margin: 2em auto;
+          font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container > div {
+          border-radius: 5px;
+          padding: 10px;
+          background-color:rgb(186, 211, 199);
+          border: 2px solid rgb(79,185,227);
+        }
+        
+        .container {
+          display: grid;
+          /* grid-template-columns: 180px 180px 180px 180px 180px; */
+          /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+          /* grid-template-columns: repeat(5, 1fr); */
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+          grid-auto-rows: minmax(50px, 260px);
+          gap: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>Six</div>
+      <div>Seven is the result of multilply 1 x 7 and Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat saepe aspernatur delectus consequuntur illo voluptatem minus eos alias. Aperiam dolorem blanditiis rem et repudiandae maiores evenietei</div>
+    </div> 
+  </body>
+ </html>
