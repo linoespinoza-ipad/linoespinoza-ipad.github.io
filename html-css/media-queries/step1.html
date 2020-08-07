@@ -5,7 +5,17 @@
     <meta charset="utf-8" />
     <title>Media Queries: a simple mobile first design, step 1</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <style>
+      html {
+        font-size: 1em;
+      }
+
+      h1 {
+        font-size: 1.5rem; /* REM: Tamaño relativo al tag HTML */
+        margin: 0;
+      }
+
       * {
         box-sizing: border-box;
       }
@@ -71,6 +81,14 @@
         nav li {
           flex: 1;
         }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      img {
+        max-width: 100%;
       }
 
       @media screen and (min-width: 70em) { /* xxxpx a más */
@@ -87,6 +105,10 @@
         footer {
           border-top: 1px solid #ccc;
           margin-top: 2em;
+        }
+
+        h1 {
+          font-size: 4rem;
         }
       }
     </style>
@@ -111,7 +133,7 @@
             <p>
               Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi
               welsh onion daikon amaranth tatsoi tomatillo melon azuki bean
-              garlic.
+              garlic. 
             </p>
 
             <p>
@@ -173,7 +195,18 @@
         </aside>
       </main>
 
-      <footer><p>&copy; 2020</p></footer>
+      <footer>
+        <p>&copy; 2020</p>
+        <img src="https://picsum.photos/900/300" width="900" height="300">
+
+        <!-- <picture>
+          <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+          <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+          <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+        </picture> 
+        https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/srcset-resolutions.html
+        -->
+      </footer>
     </div>
   </body>
 </html>
