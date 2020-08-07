@@ -36,6 +36,75 @@
       header, section, aside, nav, footer {
         padding: 20px;
       }
+
+      /* Sintaxis de un CSS Media Query */
+      @media media-type and (media-feature-rule) {
+        /* CSS rules go here */
+      }
+
+      /* Estilos que solo se aplican cuando se desea imprimir una página */
+      @media print {
+        body {
+          font-size: 12px;
+        }
+
+        h1 {
+          color: blue;
+        }
+      }
+
+      @media screen and (width: 601px) {
+        body {
+          color: red;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+            color: blue;
+        }
+      }
+
+      @media screen and (min-width: 600px) and (orientation: landscape) {
+        body {
+            color: blue;
+        }
+      }
+
+      @media screen and (min-width: 600px), screen and (orientation: landscape) {
+        body {
+            color: blue;
+        }
+      }
+
+      @media not all and (orientation: landscape) {
+        body {
+            color: blue;
+        }
+      }
+
+      @media (orientation: landscape) {
+        body {
+          font-size: 1.5em;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          font-size: 1em;
+        }
+      }
+
+      @media all {
+        h2 {
+          color: red;
+        }
+      }
+
+      @media speech {
+
+      }
+
     </style>
     <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
   </head>
